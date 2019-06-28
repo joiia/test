@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap&subset=cyrillic");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+a {
+  text-decoration: none; }
+  a:active, a:hover {
+    outline: 0; }
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+:focus {
+  outline: 0; }
+
+img, audio, video {
+  max-width: 100%;
+  height: auto; }
+
+audio, canvas, iframe, video, img, svg {
+  vertical-align: middle; }
+
+iframe {
+  border: 0; }
+
+textarea {
+  resize: none;
+  /*remove the resize handle on the bottom right*/
+  overflow: auto;
+  vertical-align: top;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none; }
+
+input, textarea, select, button {
+  outline: none;
+  border: none;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  padding: 0;
+  text-align: left; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  background: #E9E9E9;
+  padding: 1.375rem 2.8125rem;
+  min-height: 100vh;
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Font2-Medium";
+  src: url("./fonts/Font2-Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("./fonts/Font2-Medium.eot?#iefix") format("embedded-opentype"), url("./fonts/Font2-Medium.otf") format("opentype"), url("./fonts/Font2-Medium.svg") format("svg"), url("./fonts/Font2-Medium.ttf") format("truetype"), url("./fonts/Font2-Medium.woff") format("woff"), url("./fonts/Font2-Medium.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal; }
+
+.container {
+  background: #fff;
+  border: 1px solid #CDCDCD;
+  padding: 2.8125rem 1.5625rem 0;
+  width: 1200px;
+  margin: 0 auto; }
+
+.head {
+  text-align: center;
+  margin-bottom: 3.875rem;
+  font-family: "Font2-Medium";
+  font-size: 2rem;
+  line-height: 1;
+  color: #000; }
+
+.datepicker {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  text-align: center; }
+
+.ui-datepicker {
+  width: 100% !important;
+  position: relative;
+  padding: 0 6.25rem; }
+  .ui-datepicker-title {
+    padding-bottom: 1.125rem;
+    font-weight: 700;
+    font-size: 1.125rem; }
+  .ui-datepicker-group {
+    display: inline-block;
+    width: 50%;
+    padding: 0 2.1875rem 4.375rem; }
+  .ui-datepicker-calendar {
+    width: 100%; }
+    .ui-datepicker-calendar a, .ui-datepicker-calendar span {
+      color: #000;
+      display: block;
+      padding-top: 0.125rem; }
+    .ui-datepicker-calendar tr {
+      height: 42px; }
+    .ui-datepicker-calendar th, .ui-datepicker-calendar td {
+      text-align: center;
+      line-height: 1;
+      font-size: 1rem;
+      vertical-align: middle;
+      -webkit-transition: background .2s;
+      -o-transition: background .2s;
+      transition: background .2s; }
+    .ui-datepicker-calendar th {
+      color: #434343;
+      font-size: 1rem; }
+      .ui-datepicker-calendar th span {
+        padding-bottom: 0.625rem; }
+    .ui-datepicker-calendar td {
+      border: 1px solid #D8D8DD;
+      width: 14.29%; }
+      .ui-datepicker-calendar td.highlight {
+        background: #55A634; }
+        .ui-datepicker-calendar td.highlight a {
+          color: #fff; }
+  .ui-datepicker-week-end a, .ui-datepicker-week-end span {
+    color: #EA2133; }
+  .ui-datepicker-current-day {
+    background: #55A634; }
+    .ui-datepicker-current-day a {
+      color: #fff; }
+  .ui-datepicker-prev, .ui-datepicker-next {
+    font-size: 0;
+    display: block;
+    width: 32px;
+    height: 34px;
+    cursor: pointer;
+    border: 7px solid #EA2133;
+    border-right: none;
+    border-bottom: none;
+    position: absolute;
+    top: 10rem;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .ui-datepicker-prev {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    left: 0; }
+  .ui-datepicker-next {
+    -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+            transform: rotate(135deg);
+    right: 0; }
+  .ui-datepicker-other-month, .ui-datepicker-unselectable, .ui-datepicker-disabled {
+    background: #F4F2F5;
+    text-align: left !important;
+    vertical-align: top !important;
+    font-size: 0.9375rem !important; }
+    .ui-datepicker-other-month a, .ui-datepicker-other-month span, .ui-datepicker-unselectable a, .ui-datepicker-unselectable span, .ui-datepicker-disabled a, .ui-datepicker-disabled span {
+      color: #c2c4c6;
+      padding: 0.3125rem 0.5rem; }

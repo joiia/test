@@ -1,0 +1,121 @@
+.datepicker {
+	font-size: rem(12);
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.ui-datepicker {
+	width: 100% !important;
+	position: relative;
+	padding: 0 rem(100);
+
+	&-title {
+		padding-bottom: rem(18);
+		font-weight: 700;
+		font-size: rem(18);
+	}
+
+	&-group {
+		display: inline-block;
+		width: 50%;
+		padding: 0 rem(35) rem(70);
+	}
+
+	&-calendar {
+		width: 100%;
+
+		a, span {
+			color: #000;
+			display: block;
+			padding-top: rem(2);
+		}
+
+		tr {
+			height: 42px;
+		}
+
+		th, td {
+			text-align: center;
+			line-height: 1;
+			font-size: rem(16);
+			vertical-align: middle;
+			transition: background .2s;
+		}
+
+		th {
+			color: $dark;
+			font-size: rem(16);
+
+			span {
+				padding-bottom: rem(10);
+			}
+		}
+
+		td {
+			border: 1px solid $table-border-color;
+			width: 14.29%;
+
+			&.highlight {
+				background: $accent-color-2;
+
+				a {
+					color: #fff;
+				}
+			}
+		}
+		
+	}
+
+	&-week-end {
+		a, span {
+			color: $accent-color-1;
+		}
+	}
+
+	&-current-day{
+		background: $accent-color-2;
+
+		a {
+			color: #fff;
+		}
+	}
+
+	&-prev, &-next {
+		font-size: 0;
+		display: block;
+		width: 32px;
+		height: 34px;
+		cursor: pointer;
+		border: 7px solid $accent-color-1;
+		border-right: none;
+		border-bottom: none;
+		position: absolute;
+		top: rem(160);
+		transform-origin: center center;
+	}
+
+	&-prev {
+		transform: rotate(-45deg);
+		left: 0;
+	}
+
+	&-next {
+		transform: rotate(135deg);
+		right: 0;
+	}
+
+	&-other-month,
+	&-unselectable,
+	&-disabled {
+		background: $table-bg-color;
+		text-align: left !important;
+		vertical-align: top !important;
+		font-size: rem(15) !important;
+
+		a, span {
+			color: $light;
+			padding: rem(5) rem(8);
+		}
+
+	}
+}
